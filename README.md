@@ -33,6 +33,11 @@ aws-infra/
 └── README.md
 ```
 
+
+![Architecture Diagram](docs/terraform_modules_dependencies.png)
+
+
+
 ## 1. Module réseau (VPC, IGW, Subnet)
 
 **modules/network/main.tf**
@@ -85,7 +90,6 @@ resource "aws_iam_openid_connect_provider" "github" {
 
 resource "aws_iam_role" "github_actions" {
   name = "github-actions-terraform"
-
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
     Statement = [{
