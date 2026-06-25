@@ -1,0 +1,6 @@
+project          = "myapp"
+environment      = "dev"
+aws_region       = "eu-west-3"
+ami_id           = "ami-0123456789abcdef0"
+key_name         = "myapp-dev-key"
+ssh_allowed_cidr = "203.0.113.0/24"
